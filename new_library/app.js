@@ -7,7 +7,11 @@ var bodyParser = require('body-parser');
 var multer = require('multer');
 var storage = multer.diskStorage({
     destination: function(req, file, cb){
+<<<<<<< HEAD
         cb(null,'./public/images')
+=======
+        cb(null,'/root/new_library/new_library/public/images')
+>>>>>>> 31ade4e5ded44559237dd49b5f90bd08808a1459
     },
     filename: function(req, file, cb){
         cb(null, file.fieldname+Date.now()+'.png')
@@ -25,12 +29,15 @@ var rbook = require('./routes/rbook');
 var bookinfo = require('./routes/bookinfo');
 var addbook = require('./routes/addbook');
 var passbook = require('./routes/passbook');
+<<<<<<< HEAD
 var notice = require('./routes/notice');
 var praise = require('./routes/praise');
 var collect = require('./routes/collect');
 var toCollect = require('./routes/toCollect');
 var comment = require('./routes/comment');
 var toComment = require('./routes/toComment');
+=======
+>>>>>>> 31ade4e5ded44559237dd49b5f90bd08808a1459
 
 var app = express();
 
